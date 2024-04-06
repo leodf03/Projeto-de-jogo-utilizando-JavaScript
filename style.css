@@ -1,0 +1,164 @@
+body{
+    background-color: #000000;
+}
+
+@font-face {
+    font-family: 'Bruno';
+    src: url("./Fonts/Bruno_Ace_SC/BrunoAceSC-Regular.ttf");
+}
+
+.titulo{
+    font-family: 'Bruno',sans-serif;
+    font-size: 4em;/*uso em para ficar legivel em mobile e desktop*/
+    color: #11AEBF;
+    text-shadow: 10px 10px 15px #90BF49;
+    text-align: center;
+}
+
+.subtitulo{
+    font-family: 'Bruno',sans-serif;
+    font-size: 2.5em;/*uso em para ficar legivel em mobile e desktop*/
+    color: #11AEBF;
+    text-shadow: 5px 5px 5px #90BF49;
+    text-align: center;
+}
+
+.instrucao{
+    font-family: 'Bruno',sans-serif;
+    font-size: 2.5em;
+    color: #90BF49;
+    text-decoration: underline #11AEBF ;
+}
+
+.bloco02{
+    font-family: 'Bruno',sans-serif;
+    font-size: 1.1em;/*uso em para ficar legivel em mobile e desktop*/
+    color: #90BF49;
+}
+
+li{
+    font-family: 'Bruno',sans-serif;
+    font-size: 1em;
+    color: #90BF49;
+}
+
+#bloco03{
+    display: flex; /*Ajeita em linha, mas é necessário também usar a de coluna*/
+    width: 100%;
+    flex-direction: column; /*Organiza as imagens em coluna*/
+    align-items: center; /*Centraliza na tela junto a propriedade acima*/
+    margin: 40px 0px 100px 0px;
+}
+
+#bloco03 img{
+    z-index: 1; /*Colocar a imagem sobreposta a outra, indicar o nível de profundidade*/
+    width: 90px;
+    height: 90px;
+    position: absolute; /*Propriedade que usa como referencia o bloco 3 e depois posiciona*/
+    transition: 0.5s all linear;
+}
+
+#bloco03 img:hover,:focus{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+}
+
+#bloco03 img#cenario:hover{
+    cursor: default;
+}
+
+#bloco03 img#cenario{
+    z-index: 0;
+    width: 80%;
+    height: 1060px;
+    position: relative;
+    object-fit: cover; /*Não tirar tanto a qualidade da imagem de acordo com o tamanho proposto*/
+}
+
+#bloco03 img#perso1{
+    left: 800px;
+    top: 1400px;
+}
+
+#bloco03 img#perso2{
+    left: 1900px;
+    top: 1400px;
+}
+
+#bloco03 img#perso3{
+    left: 2000px;
+    top: 1520px;
+}
+
+#bloco03 img#perso4{
+    left: 980px;
+    top: 1600px;
+}
+
+#bloco03 img#perso5{
+    left: 700px;
+    top: 1150px;
+}
+
+#bloco03 img#perso6{
+    left: 500px;
+    top: 1500px;
+}
+
+#bloco03 img#perso7{
+    left: 1400px;
+    top: 1160px;
+}
+
+#bloco03 ul{
+    display: flex;
+}
+
+#bloco03 li{
+    margin-right: 35px; /*Margem entre as palavras*/
+    font-size: 1.5em;
+    color:  #11AEBF;
+}
+
+.clique{
+    filter: none;
+    opacity: 0;
+    -webkit-transition: all 0.8s linear;
+    -moz-transition: all 0.8s linear;
+    transition: all 0.8s linear;
+}
+
+#mostrador
+{
+    width: 67px;
+    margin: 15px 15px 15px 15px;
+    padding-left: 1330px;
+    padding-top: 150px;
+    font-family: Bruno;
+    color:#11AEBF;
+    font-size: 40px;
+}
+
+.botao
+{
+    font-family: Bruno;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color:#11AEBF;
+    border-radius: 5px;
+    font-size: 40px;
+    padding: 0px 0px 0px 0px;
+    border: #000000;
+}
+
+.invisivel
+{
+    opacity: 0;
+}
+
+#pontuacao
+{
+    font-family: 'Bruno';
+    color:#11AEBF;
+}
